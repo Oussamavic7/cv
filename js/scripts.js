@@ -341,5 +341,12 @@
 		}
 	}
 	google.maps.event.addDomListener(window, 'load', initialize_map);
+/*==========  Instafeed  ==========*/
+	var userFeed = new Instafeed({
+		get: 'user',
+		userId: '437264297',
+		accessToken: '437264297.98faa0a.20113111dc724de9a05fb7284189ddb8'
+	});
+	userFeed.run();
 
 })(jQuery);
