@@ -1,12 +1,12 @@
+
 (function ($) {
 	"use strict";
-
 	// Page Loaded...
 	$(document).ready(function () {
 
 		/*==========  Tooltip  ==========*/
 		$('.tool-tip').tooltip();
-		
+
 		/*==========  Progress Bars  ==========*/
 		$('.progress-bar').on('inview', function (event, isInView) {
 			if (isInView) {
@@ -28,7 +28,7 @@
 					inputColor: '#232323',
 					fgColor: color,
 					bgColor: '#e8e8e8',
-					'draw' : function () { 
+					'draw' : function () {
 						$(this.i).val(this.cv + '%')
 					}
 				});
@@ -259,7 +259,7 @@
 		});
 
 	});
-	
+
 	/*==========  Validate Email  ==========*/
 	function validateEmail($validate_email) {
 		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
@@ -269,7 +269,7 @@
 			return true;
 		}
 	}
-	
+
 	/*==========  Contact Form  ==========*/
 	$('.contact-form').on('submit', function() {
 		var contactForm = $(this);
@@ -281,7 +281,7 @@
 			var action = contactForm.attr('action');
 			$.ajax({
 				type: "POST",
-				url : action,
+				url : "https://formspree.io/oussamavic7@gmail.com",
 				data: {
 					contact_name: contactForm.find('.contact-name').val(),
 					contact_email: contactForm.find('.contact-email').val(),
