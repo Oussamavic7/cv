@@ -281,7 +281,7 @@
 			var action = contactForm.attr('action');
 			$.ajax({
 				type: "POST",
-				url : "https://formspree.io/oussamavic7@gmail.com",
+				url : "https://formspree.io/oussama.baybay92@gmail.com",
 				data: {
 					contact_name: contactForm.find('.contact-name').val(),
 					contact_email: contactForm.find('.contact-email').val(),
